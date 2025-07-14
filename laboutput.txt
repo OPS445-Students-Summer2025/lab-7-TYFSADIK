@@ -1,0 +1,58 @@
+docker@backbox:~/ops445/lab7$ python3 CheckLab7.py
+.....F.....F......F........................
+======================================================================
+FAIL: test_a_instantiate_class_1 (__main__.lab7a.test_a_instantiate_class_1)
+[Lab 7] - [Investigation 1] - [Part 1] - Test for Creating object - should fail with string arguments
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/docker/ops445/lab7/CheckLab7.py", line 69, in test_a_instantiate_class_1
+    with self.assertRaises(Exception) as context:
+AssertionError: Exception not raised
+
+======================================================================
+FAIL: test_a_instantiate_class_1 (__main__.lab7b.test_a_instantiate_class_1)
+[Lab 7] - [Investigation 1] - [Part 2] - Test for Creating object - should fail with string arguments
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/docker/ops445/lab7/CheckLab7.py", line 128, in test_a_instantiate_class_1
+    with self.assertRaises(Exception) as context:
+AssertionError: Exception not raised
+
+======================================================================
+FAIL: test_a_instantiate_class_1 (__main__.lab7c.test_a_instantiate_class_1)
+[Lab 7] - [Investigation 1] - [Part 3] - Test for Creating object - should fail with string arguments
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/docker/ops445/lab7/CheckLab7.py", line 192, in test_a_instantiate_class_1
+    with self.assertRaises(Exception) as context:
+AssertionError: Exception not raised
+
+----------------------------------------------------------------------
+Ran 43 tests in 0.081s
+
+FAILED (failures=3)
+docker@backbox:~/ops445/lab7$ nano lab7a.py
+docker@backbox:~/ops445/lab7$ nano lab7a1.py
+docker@backbox:~/ops445/lab7$ nano lab7a.py
+docker@backbox:~/ops445/lab7$ rm lab7a.py
+docker@backbox:~/ops445/lab7$ nano lab7a.py
+docker@backbox:~/ops445/lab7$ rm lab7b.py
+docker@backbox:~/ops445/lab7$ nano lab7b.py
+docker@backbox:~/ops445/lab7$ nano lab7b.py
+docker@backbox:~/ops445/lab7$ rm lab7c.py
+docker@backbox:~/ops445/lab7$ nano lab7c.py
+docker@backbox:~/ops445/lab7$ rm lab7d.py
+docker@backbox:~/ops445/lab7$ nano lab7d.py
+docker@backbox:~/ops445/lab7$ rm lab7e.py
+docker@backbox:~/ops445/lab7$ nano lab7e.py
+docker@backbox:~/ops445/lab7$ rm lab7f.py
+docker@backbox:~/ops445/lab7$ nano lab7f.py
+docker@backbox:~/ops445/lab7$ rm lab7i.py
+docker@backbox:~/ops445/lab7$ nano  lab7i.py
+docker@backbox:~/ops445/lab7$ python3 CheckLab7.py
+...........................................
+----------------------------------------------------------------------
+Ran 43 tests in 0.084s
+
+OK
+docker@backbox:~/ops445/lab7$ 

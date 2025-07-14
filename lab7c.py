@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # Student ID: [162982235]
+
 class Time:
     def __init__(self, hour, minute, second):
         if not (isinstance(hour, int) and isinstance(minute, int) and isinstance(second, int)):
@@ -10,13 +11,14 @@ class Time:
         self.minute = minute
         self.second = second
 
-def sum_times(time1, time2):
-    total_seconds = time1.hour * 3600 + time1.minute * 60 + time1.second + \
-                    time2.hour * 3600 + time2.minute * 60 + time2.second
-    hour = total_seconds // 3600
-    total_seconds %= 3600
-    minute = total_seconds // 60
-    second = total_seconds % 60
+def time_to_sec(time_obj):
+    return time_obj.hour * 3600 + time_obj.minute * 60 + time_obj.second
+
+def sec_to_time(seconds):
+    hour = seconds // 3600
+    seconds %= 3600
+    minute = seconds // 60
+    second = seconds % 60
     return Time(hour, minute, second)
 
 def format_time(time_obj):
